@@ -1,0 +1,5 @@
+@media (max-width: 800px) {
+  .menu_btn.active > .menu_list > .menu_item {
+    font-size: 40px;
+  }
+}
