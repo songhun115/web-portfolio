@@ -49,15 +49,6 @@
   transition: 0.3s;
 }
 
-#section2 img {
-  left: 130%;
-  position: relative;
-  transition: all 600ms ease;
-}
-#section2 p {
-  opacity: 0;
-  transition: all 600ms ease;
-}
 /*menu btn End */
 
 /* main content Start  */
@@ -226,3 +217,117 @@
 .img_box > img {
   max-width: 100%;
 }
+
+/* work Start */
+.works_title * {
+  color: #fff;
+  margin: 0;
+}
+.works_title {
+  display: flex;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.works_title > h1 {
+  font-size: 50px;
+  position: relative;
+}
+
+.works_title > p {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 20px;
+  padding-bottom: 5px;
+}
+.work_list {
+  display: none;
+}
+/* work End */
+
+.swiper-slide > img {
+  max-width: 100%;
+}
+.bg {
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.swiper-slide-active:hover > .bg {
+  background-color: black;
+  opacity: 0.2;
+  transition: 0.3s;
+}
+.first {
+  visibility: hidden;
+}
+.slide_box {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.swiper-pagination {
+}
+.slide_box > img {
+  width: 100%;
+}
+/* oneSelf Start */
+.oneself_title * {
+  color: white;
+  margin: 0;
+}
+.oneself_title > div > span {
+  font-size: 80px;
+  font-weight: var(--font-bold);
+}
+.oneself_title > div:not(:first-child) {
+  margin-left: 100px;
+  position: relative;
+}
+.last {
+  position: relative;
+}
+.last::after {
+  clear: both;
+  content: "and ability";
+  position: absolute;
+  bottom: 10px;
+  left: 105%;
+  font-size: 20px;
+  width: 100%;
+}
+
+.oneself_title > p {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 24px;
+}
+.oneself_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.oneself_item {
+  width: 45%;
+  margin: 30px 30px 0 0;
+}
+.oneself_item > p {
+  width: 80%;
+}
+.onself_item_title {
+  font-size: 24px;
+  position: relative;
+}
+.onself_item_title > span {
+  color: var(--color-red);
+  font-weight: var(--font-bold);
+}
+.oneself_contaner {
+  width: 100%;
+}
+
+/* oneSelf End */

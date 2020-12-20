@@ -1,6 +1,10 @@
 @media (max-width: 1240px) {
+  .nav_bar {
+    display: none;
+  }
 }
-
+@media (min-width: 1024px) {
+}
 @media (max-width: 1024px) {
   .main_title > div > span {
     font-size: 17vw;
@@ -16,14 +20,59 @@
     width: 280px;
     margin-bottom: 5%;
   }
+  .works_title {
+    top: 10%;
+  }
 }
 
 @media (max-width: 800px) {
+  .slide_box {
+    height: 300px;
+  }
+  .first {
+    visibility: visible;
+  }
+  .last::after {
+    display: none;
+  }
+  .oneself_title > div:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  .oneself_title > div > span {
+    font-size: 17vw;
+  }
+  .section_box > .oneself_list > .oneself_item:first-child {
+    margin-top: 20px;
+  }
+  .oneself_list {
+    flex-direction: column;
+  }
+  .oneself_item {
+    width: 90%;
+    margin: 0;
+  }
+  .onself_item_title {
+    font-size: 18px;
+  }
+  .oneself_item > p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .oneself_title {
+    flex-direction: column;
+  }
+  .oneself_title > h1 {
+    font-size: 17vw;
+  }
+  .oneself_title > p {
+    margin: 0;
+  }
   .img_box {
     width: 50%;
   }
   .slide_content:first-child {
-    margin-bottom: 30%;
+    margin-bottom: 40%;
   }
   .slide_content > span {
     font-size: 0.9em;
@@ -50,9 +99,6 @@
     margin-left: 30px;
   }
 
-  .nav_bar {
-    display: none;
-  }
   .sub_title {
     display: flex;
     flex-direction: column-reverse;

@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publisher Web Portfolio</title>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
     crossorigin="anonymous"></script>
     
+    <link rel="stylesheet" href="https://swiperjs.com/package/swiper-bundle.min.css">
+    <script src="https://swiperjs.com/package/swiper-bundle.min.js"></script>
+
     <script src="fullpage.min.js"></script>
     <link rel="stylesheet" href="fullpage.min.css">
 
@@ -69,7 +73,6 @@
                         <img src="imgs/section0/main_img.png" alt="">
                     </div> 
                 </div>
-               
             </div>
         </div>
         <div class="section active" id="section1">
@@ -127,30 +130,126 @@
                 </div>
             </div>
             <div class="slide" id="slide4">
-                <div class="intro">
-                    
-                </div>
             </div>
         </div>
         <div class="section " id="section2">
-           
+            
         </div>
         <div class="section " id="section3">
-           
+            <div class="section_box con">
+                <div class="works_title">
+                    <h1>Other Works</h1>
+                    <p>clock to open detail</p>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                              <div class="bg"></div>
+                              <img src="imgs/section0/main_img.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                              <div class="bg"></div>
+                              <img src="imgs/section0/main_img.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                              <div class="bg"></div>
+                              <img src="imgs/section0/main_img.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                              <div class="bg"></div>
+                              <img src="imgs/section0/main_img.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                              <div class="bg"></div>
+                              <img src="imgs/section0/main_img.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide_box">
+                              <div class="bg"></div>
+                              <img src="imgs/section0/main_img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
         </div>
         <div class="section " id="section4">
-           
+            <div class="section_box con">
+                <div class="oneself_title">
+                    <div>
+                        <span>One Self</span>
+                    </div>
+                    <div>
+                        <span class="last">Introduce</span>
+                    </div>
+                    <p class="first">and ability </p>
+                  
+                 </div>
+                 
+                 <ul class="oneself_list">
+                     <li class="oneself_item">
+                         <p class="onself_item_title">
+                         <span>P</span>ublilshing</p>
+                         <p>- 퍼블리싱 스킬(Html5 , CSS3, JS)에 대한 이해도가 높고, 웹 표준성을 준수하여 코드를 작성합니다. JQuery 사용해 애니메이션을 연구하고 구현하는 것을 좋아합니다.</p>
+                     </li>
+                     <li class="oneself_item">
+                        <p class="onself_item_title">
+                        <span>D</span>esign</p>
+                            <p>- Adobe의 대표적인 디자인툴 Photoshop, illustrator, Xd 를 사용할 수 있습니다. 포트폴리오는 전부 제가 직접 디자인 했습니다.</p>
+                    </li>
+                    <li class="oneself_item">
+                        <p class="onself_item_title">
+                        <span>B</span>ack-end</p>
+                        <p>- 백엔드 언어(php,asp,jsp) 를 사용한 경험이 있습니다. 팀의 협업을 위해 각 포지션의 입장에서 생각합니다</p>
+                    </li>
+                    <li class="oneself_item">
+                        <p class="onself_item_title">
+                        <span>A</span>ability</p>
+                        <p>- 각각의 위 능력들을 조화롭게 사용하여 보다 깔끔하고 감각적인 디자인과 UI/IX를 잘 구성할 수 있으며 팀원들과의 협업도 매끄럽게 해나갈 수 있습니다.</p>
+                        
+                    </li>
+                 </ul>
+             </div>
         </div>
     </div>
 
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            sectionsColor: ['#000000', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+            sectionsColor: ['#000000', '#4BBFC3', 'black', 'black', 'black'],
             menu: '#menu',
             lazyLoad: true,
-          
         });
     </script>
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
     <script src="main.js"></script>    
 </body>
 </html>
