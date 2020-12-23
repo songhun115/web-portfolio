@@ -128,7 +128,9 @@
   top: 0;
   transform: translateY(0%);
 }
-
+#section3 {
+  background-image: linear-gradient(to right, #29323c 0%, #000 100%);
+}
 #intro {
   height: 100vh;
   width: 100vw;
@@ -145,11 +147,16 @@
 /* nav_bar End */
 
 /* slide Start */
+
 #slide1 {
-  background-color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://img.cdn.encarmagazine.com/2017/01/2017-All-New-Cruze_Exterior_01.jpg");
 }
 #slide2 {
-  background-color: gold;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://www.ikea.com/images/golden-brown-leather-landskrona-sofa-with-long-chaise-and-fo-13443229847bbc90fd1b632e8805c0a9.jpg?f=xxxl");
 }
 #slide3 {
   background-color: #fff;
@@ -158,13 +165,24 @@
   background-color: greenyellow;
 }
 /* slide End */
-#slide1 * {
-  color: white;
+.slide * {
+  font-weight: bolder;
 }
+#slide1 .slide_content_box > .content_box {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#slide1 .slide_content_box > .content_box * {
+  color: #fff;
+}
+#slide2 .slide_content_box > .content_box * {
+  color: black;
+}
+
 .content_box {
   display: flex;
   flex-direction: column;
   width: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .content_title {
@@ -184,11 +202,16 @@
   display: flex;
   margin: 0;
 }
+
 .slide_content {
   width: 100%;
   padding: 70px 70px 0 70px;
   box-sizing: border-box;
   flex: 1;
+}
+
+.content_plan {
+  padding: 70px 70px 30px 70px;
 }
 .slide_content:not(:first-child) > span {
   font-size: 1.5em;
@@ -297,6 +320,7 @@
 .last {
   position: relative;
 }
+
 .last::after {
   clear: both;
   content: "and ability";
@@ -380,4 +404,34 @@
 .slide_box:hover > h1 {
   visibility: visible;
   transition: 0.3s;
+}
+
+/* project  Start*/
+
+.project_title * {
+  color: white;
+  margin: 0;
+}
+.project_title > h1 {
+  font-size: 70px;
+}
+.project_title > p {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 10px 20px;
+}
+.project_title {
+  margin-bottom: 50px;
+  display: flex;
+}
+.project_box {
+  display: flex;
+  justify-content: center;
+}
+.swiper-wrapper .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.project_item:hover {
+  background-color: red;
 }

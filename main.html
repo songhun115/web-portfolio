@@ -22,6 +22,31 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="responsive.css">
   
+
+    <style>
+        body {
+          background: #fff;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .swiper2 {
+          width: 100%;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+    
+        .swiper2 .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          height: 300px;
+    
+        }
+      </style>
 </head>
 <body>
     <!-- menu btn  -->
@@ -102,16 +127,13 @@
                 </div>
             </div>
             <div class="slide " id="slide2">
-               
-            </div>
-            <div class="slide" id="slide3">
                 <div class="slide_content_box">
                     <div class="content_box ">
                         <h1 class="content_title slide_content">
                             <div class="img_box">
                                 <img src="imgs/section1/logo2.png" alt="">
                             </div>
-                            <span>ILOOM</span>
+                            <span>IKEA</span>
                             <p>웹표준 사이트 - 리디자인 - 반응형</p>
                            
                         </h1>
@@ -129,10 +151,29 @@
                     </div>
                 </div>
             </div>
-            <div class="slide" id="slide4">
-            </div>
+          
         </div>
         <div class="section " id="section2">
+            <div class="project con">
+                <div class="project_box">
+                    <div class="project_title">
+                        <h1>PROJECT</h1>
+                        <p>Click to open detail</p>
+                    </div> 
+                </div>
+                <div class="swiper-container swiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide project_item project_item1" style="background-image:url(imgs/section0/main_img.png)"></div>
+                      <div class="swiper-slide project_item project_item2" style="background-image:url(imgs/section0/main_img.png)"></div>
+                      <div class="swiper-slide project_item project_item3" style="background-image:url(imgs/section0/main_img.png)"></div>
+                      <div class="swiper-slide project_item project_item4" style="background-image:url(imgs/section0/main_img.png)"></div>
+                      <div class="swiper-slide project_item project_item5" style="background-image:url(imgs/section0/main_img.png)"></div>
+                      <div class="swiper-slide project_item project_item6" style="background-image:url(imgs/section0/main_img.png)"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
             
         </div>
         <div class="section " id="section3">
@@ -141,7 +182,7 @@
                     <h1>Other Works</h1>
                     <p>clock to open detail</p>
                 </div>
-                <div class="swiper-container">
+                <div class="swiper-container swiper1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide1">
                             <div class="slide_box">
@@ -186,12 +227,15 @@
                             </div>
                         </div>
                     </div>
+
+                    
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
                     <!-- Add Arrows -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                   </div>
+                  
             </div>
         </div>
         <div class="section " id="section4">
@@ -232,6 +276,7 @@
                  </ul>
              </div>
         </div>
+       
     </div>
     <div class="works_modul">
         <div class="modul modul1">
@@ -253,6 +298,8 @@
             <img src="imgs/section0/main_img.png" alt="">
         </div>
     </div>
+
+    
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
             sectionsColor: ['#000000', '#4BBFC3', 'black', 'black', 'black'],
@@ -260,8 +307,9 @@
             lazyLoad: true,
         });
     </script>
+
       <script>
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.swiper1', {
           slidesPerView: 1,
           spaceBetween: 30,
           loop: true,
@@ -274,6 +322,23 @@
             prevEl: '.swiper-button-prev',
           },
         });
+
+        var swiper = new Swiper('.swiper2', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    })
       </script>
     <script src="main.js"></script>    
 </body>
