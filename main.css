@@ -146,13 +146,13 @@
 
 /* slide Start */
 #slide1 {
-  background-color: #000;
+  background-color: red;
 }
 #slide2 {
   background-color: gold;
 }
 #slide3 {
-  background-color: coral;
+  background-color: #fff;
 }
 #slide4 {
   background-color: greenyellow;
@@ -216,6 +216,13 @@
 }
 .img_box > img {
   max-width: 100%;
+}
+.bg {
+  background-color: black;
+  opacity: 0;
+}
+.slide_box:hover > .bg {
+  opacity: 0.3;
 }
 
 /* work Start */
@@ -331,3 +338,46 @@
 }
 
 /* oneSelf End */
+
+/* modul Start */
+.works_modul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+.modul {
+  width: 70%;
+}
+.modul > img {
+  width: 100%;
+}
+/* modul End */
+
+.swiper-pagination-bullet {
+  background-color: white;
+  width: 12px;
+  height: 12px;
+}
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 6px;
+}
+.slide_box > h1 {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slide_box:hover > h1 {
+  visibility: visible;
+  transition: 0.3s;
+}

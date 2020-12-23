@@ -29,7 +29,10 @@
   .slide_box {
     height: 300px;
   }
-  .first {
+  .modul {
+    width: 90%;
+  }
+  .modul .first {
     visibility: visible;
   }
   .last::after {

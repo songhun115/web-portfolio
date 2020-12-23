@@ -7,6 +7,42 @@ $(document).ready(function () {
             $clickd.addClass('active');  
         }   
     })
+    // 기본적으로 숨김
+    $('.works_modul').hide();
+    $('.modul').hide();
+
+    // 클릭시 사라짐
+    $('.works_modul').click(function(){
+      $('.works_modul').hide();
+      $('.modul').hide();
+    })
+
+    //클릭시 나옴 
+    $('.slide1').click(function(){
+         $('.works_modul').show();
+         $('.modul1').show();
+    })
+    $('.slide2').click(function(){
+         $('.works_modul').show();
+         $('.modul2').show();
+    })
+    $('.slide3').click(function(){
+         $('.works_modul').show();
+         $('.modul3').show();
+    })
+    $('.slide4').click(function(){
+         $('.works_modul').show();
+         $('.modul4').show();
+    })
+    $('.slide5').click(function(){
+         $('.works_modul').show();
+         $('.modul5').show();
+    })
+    $('.slide6').click(function(){
+         $('.works_modul').show();
+         $('.modul6').show();
+    })
+
     const navbarMenu = document.querySelector('.navbar__menu_list');
     navbarMenu.addEventListener('click',(event) => {
       const target = event.target;
