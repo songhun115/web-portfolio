@@ -18,28 +18,30 @@ $(document).ready(function () {
     })
 
     //클릭시 나옴 
+
+    
     $('.slide1').click(function(){
-         $('.works_modul').show();
+         $('.works_modul').show('fast');
          $('.modul1').show();
     })
     $('.slide2').click(function(){
-         $('.works_modul').show();
+         $('.works_modul').show('fast');
          $('.modul2').show();
     })
     $('.slide3').click(function(){
-         $('.works_modul').show();
+         $('.works_modul').show('fast');
          $('.modul3').show();
     })
     $('.slide4').click(function(){
-         $('.works_modul').show();
+         $('.works_modul').show('fast');
          $('.modul4').show();
     })
     $('.slide5').click(function(){
-         $('.works_modul').show();
+         $('.works_modul').show('fast');
          $('.modul5').show();
     })
     $('.slide6').click(function(){
-         $('.works_modul').show();
+         $('.works_modul').show('fast');
          $('.modul6').show();
     })
 

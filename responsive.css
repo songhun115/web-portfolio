@@ -3,13 +3,21 @@
     display: none;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1400px) {
+  .modul {
+    width: 60%;
+  }
 }
 @media (max-width: 1024px) {
   .main_title > div > span {
     font-size: 17vw;
   }
-
+  .project_text > h3 {
+    font-size: 2.5vw;
+  }
+  .project_text > h4 {
+    font-size: 2vw;
+  }
   .intro_title {
     display: none;
   }
@@ -26,6 +34,16 @@
 }
 
 @media (max-width: 800px) {
+  .project_title {
+    flex-direction: column;
+  }
+  .project_title > h1 {
+    font-size: 15vw;
+  }
+  .project_title > p {
+    margin: 0 0 10px 0px;
+    white-space: nowrap;
+  }
   .slide_box {
     height: 300px;
   }
