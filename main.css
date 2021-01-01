@@ -154,12 +154,12 @@
 #slide1 {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("https://img.cdn.encarmagazine.com/2017/01/2017-All-New-Cruze_Exterior_01.jpg");
+  background-image: url("https://www.ikea.com/images/golden-brown-leather-landskrona-sofa-with-long-chaise-and-fo-13443229847bbc90fd1b632e8805c0a9.jpg?f=xxxl");
 }
 #slide2 {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("https://www.ikea.com/images/golden-brown-leather-landskrona-sofa-with-long-chaise-and-fo-13443229847bbc90fd1b632e8805c0a9.jpg?f=xxxl");
+  background-image: url("imgs/excel.png");
 }
 #slide3 {
   background-color: #fff;
@@ -172,20 +172,20 @@
   font-weight: bolder;
 }
 #slide1 .slide_content_box > .content_box {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 #slide1 .slide_content_box > .content_box * {
-  color: #fff;
+  color: black;
 }
 #slide2 .slide_content_box > .content_box * {
-  color: black;
+  color: #fff;
 }
 
 .content_box {
   display: flex;
   flex-direction: column;
   width: 50%;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .content_title {
@@ -214,13 +214,16 @@
 }
 
 .content_plan {
+  padding: 70px 70px 0px 70px;
+}
+.view_content {
   padding: 70px 70px 30px 70px;
 }
 .slide_content:not(:first-child) > span {
   font-size: 1.5em;
 }
 .slide_content:first-child {
-  margin-bottom: 25%;
+  margin-bottom: 15%;
 }
 
 .fp-controlArrow fp-prev {
@@ -230,10 +233,12 @@
 .fp-controlArrow.fp-next {
   right: 10px;
   border-width: 28.5px 0 28.5px 24px;
+  border-color: transparent transparent transparent #fb004d;
 }
 .fp-controlArrow.fp-prev {
   left: 10px;
   border-width: 28.5px 24px 28.5px 0;
+  border-color: transparent #fb004d transparent transparent;
 }
 
 .img_box {
@@ -485,4 +490,59 @@
 .project_text a:hover {
   background-color: rgba(0, 0, 0, 0.4);
   transition: 0.3s;
+}
+
+.modul1 > img {
+  width: 30%;
+}
+
+.modul1 {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper2 {
+  width: 90%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.view_content {
+  display: flex;
+  flex-direction: column;
+}
+.view_item {
+  display: flex;
+}
+.view_item > a {
+  padding: 10px;
+  border: 1px solid gray;
+  margin-right: 10px;
+  color: white;
+}
+.view_item > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  transition: 0.3s;
+}
+.view_content > span {
+  margin-bottom: 15px;
+}
+
+.view_item2 {
+  display: flex;
+}
+
+.view_item2 > a {
+  padding: 10px;
+  border: 1px solid white;
+  margin-right: 10px;
+  color: white;
+}
+.view_item2 > a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+}
+.view_item2 > span {
+  margin-bottom: 15px;
 }
