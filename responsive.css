@@ -148,6 +148,12 @@
     right: 5%;
     top: 5%;
   }
+  .modul2 > img {
+    width: 70%;
+  }
+  .modul3 > img {
+    width: 70%;
+  }
 }
 @media (max-width: 500px) {
   .works_title {

@@ -501,6 +501,21 @@
   justify-content: center;
 }
 
+.modul2 > img {
+  width: 60%;
+}
+.modul2 {
+  display: flex;
+  justify-content: center;
+}
+
+.modul3 > img {
+  width: 60%;
+}
+.modul3 {
+  display: flex;
+  justify-content: center;
+}
 .swiper2 {
   width: 90%;
   padding-top: 50px;
