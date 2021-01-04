@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publisher Web Portfolio</title>
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-    crossorigin="anonymous"></script>
-    
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://swiperjs.com/package/swiper-bundle.min.css">
     <script src="https://swiperjs.com/package/swiper-bundle.min.js"></script>
 
@@ -17,89 +20,95 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="responsive.css">
-  
+
 
     <style>
         body {
-          background: #fff;
-          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-          font-size: 14px;
-          color: #000;
-          margin: 0;
-          padding: 0;
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
         }
-    
-    
+
+
         .swiper2 .swiper-slide {
-          background-position: center;
-          background-size: cover;
-          width: 500px;
-          height: 500px;
-    
+            background-position: center;
+            background-size: cover;
+            width: 500px;
+            height: 500px;
+
         }
+
         .swiper2 .swiper-slide:hover .project_bg {
             opacity: 0.7;
             transition: 0.3s;
         }
-        .project_bg{
+
+        .project_bg {
             background: black;
             width: 100%;
             height: 100%;
             opacity: 0;
             transition: 0.3s;
         }
-        
+
         @media (max-width: 744px) {
             .swiper2 .swiper-slide {
-            width: 300px;
-            height: 300px;
+                width: 300px;
+                height: 300px;
             }
+
             .project_text {
                 top: 20%;
             }
-            .project_text > h3 {
+
+            .project_text>h3 {
                 white-space: nowrap;
                 font-size: 22px;
-             }
-            .project_text > h4 {
+            }
+
+            .project_text>h4 {
                 font-size: 18px;
             }
         }
-      </style>
+    </style>
 </head>
+
 <body>
     <!-- menu btn  -->
-        <div class="menu_btn">
-            <div class="btn_line_box">
+    <div class="menu_btn">
+        <div class="btn_line_box">
             <div class="btn_line line1"></div>
             <div class="btn_line line2"></div>
             <div class="btn_line line3"></div>
-        </div>  
-            <ul class="menu_list">
-                <li class="menu_item" data-link="#section0">INTRO</li>
-                <li class="menu_item" data-link="#section1">REDESIGN</li>
-                <li class="menu_item" data-link="#section2">PROJECTS</li>
-                <li class="menu_item" data-link="#section3">OTHER WORKS</li>
-                <li class="menu_item" data-link="#section4">ONESELF</li>
-            </ul>
         </div>
-    
-   
+        <ul class="menu_list">
+            <li class="menu_item" data-link="#section0">INTRO</li>
+            <li class="menu_item" data-link="#section1">REDESIGN</li>
+            <li class="menu_item" data-link="#section2">PROJECTS</li>
+            <li class="menu_item" data-link="#section3">OTHER WORKS</li>
+            <li class="menu_item" data-link="#section4">ONESELF</li>
+        </ul>
+    </div>
+
+
     <!--navigation_bar Start-->
     <nav class="nav_bar">
         <ul class="navbar__menu_list">
-          <li class="navbar__menu_item" data-link="#section0">Intro</li>
-          <li class="navbar__menu_item" data-link="#section1">REDESIGN</li>
-          <li class="navbar__menu_item" data-link="#section2">PROJECTS</li>
-          <li class="navbar__menu_item" data-link="#section3">OTHER WORKS</li>
-          <li class="navbar__menu_item" data-link="#section4">ONESELF</li>
+            <li class="navbar__menu_item" data-link="#section0">Intro</li>
+            <li class="navbar__menu_item" data-link="#section1">REDESIGN</li>
+            <li class="navbar__menu_item" data-link="#section2">PROJECTS</li>
+            <li class="navbar__menu_item" data-link="#section3">OTHER WORKS</li>
+            <li class="navbar__menu_item" data-link="#section4">ONESELF</li>
         </ul>
-      </nav>
-      <!--navigation_bar End-->
+    </nav>
+    <!--navigation_bar End-->
 
     <div id="fullpage">
         <div class="section " id="section0">
@@ -107,7 +116,8 @@
                 <div class="intro_title main_content">
                     <p>Making design thinking
                         <br>
-                        approachable</p>
+                        approachable
+                    </p>
                 </div>
                 <h1 class="main_title main_content">
                     <div>
@@ -116,16 +126,16 @@
                     <div>
                         <span>Sensuous self</span>
                     </div>
-                  
+
                 </h1>
                 <div class="sub_title main_content">
                     <div class="sub_title_sj">
                         <span>HELLOHELLO, 2020</span>
-                        <span>Project introduction</span>                       
+                        <span>Project introduction</span>
                     </div>
                     <div class="sub_title_img">
                         <img src="imgs/section0/main_img.png" alt="">
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,13 +143,13 @@
             <div class="slide" id="slide1">
                 <div class="slide_content_box">
                     <div class="content_box ">
-                        <h1 class="content_title slide_content">
+                        <h1 class="content_title content_title1 slide_content">
                             <div class="img_box">
                                 <img src="imgs/section1/logo2.png" alt="">
                             </div>
                             <span>IKEA</span>
                             <p>웹표준 사이트 - 리디자인 - 반응형</p>
-                           
+
                         </h1>
                         <div class="content_term slide_content">
                             <span>제작기간</span>
@@ -147,7 +157,7 @@
                         </div>
                         <div class="content_plan content_plan1 slide_content">
                             <span>기획의도</span>
-                            <p>브랜드관련 차량정보, 관련 이벤트, 매장정보, 고객연결 센터 등 
+                            <p>브랜드관련 차량정보, 관련 이벤트, 매장정보, 고객연결 센터 등
                                 자세한 정보들을 사이트 방문자에게 제공하기 위해 시인성을 기존
                                 사이트보다 고려하여 제작하였습니다.
                             </p>
@@ -171,15 +181,15 @@
                             </div>
                             <span>Futices</span>
                             <p>웹표준 사이트 - 리디자인 - 반응형</p>
-                           
+
                         </h1>
                         <div class="content_term slide_content">
                             <span>제작기간</span>
-                            <p>7일 - 기획   3일 / 디자인 2일 / 퍼블리싱 2일</p>
+                            <p>7일 - 기획 3일 / 디자인 2일 / 퍼블리싱 2일</p>
                         </div>
                         <div class="content_plan slide_content">
                             <span>기획의도</span>
-                            <p>브랜드관련 차량정보, 관련 이벤트, 매장정보, 고객연결 센터 등 
+                            <p>브랜드관련 차량정보, 관련 이벤트, 매장정보, 고객연결 센터 등
                                 자세한 정보들을 사이트 방문자에게 제공하기 위해 시인성을 기존
                                 사이트보다 고려하여 제작하였습니다.
                             </p>
@@ -193,107 +203,122 @@
                         </div>
                     </div>
                 </div>
-               
+
             </div>
         </div>
-        
+
         <div class="section " id="section2">
             <div class="project con">
                 <div class="project_box">
                     <div class="project_title">
                         <h1>PROJECT</h1>
                         <p>Click to view site open detail</p>
-                    </div> 
+                    </div>
                 </div>
                 <div class="swiper-container swiper2">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide project_item project_item1" style="background-image:url(imgs/section2/mockup1.jpg)">
-                        <div class="project_text">
-                            <h3>내셔널지오그래픽(모작)</h3>
-                            <h4>반응형 웹</h4>
-                            <p>제작기간 : 5일</p>
-                            <p>Main Page</p>
-                            <a href="file:///C:/Users/hoho7/Desktop/%EB%82%B4%EC%85%94%EB%84%90%EC%A7%80%EC%98%A4%EA%B7%B8%EB%9E%98%ED%94%BD/National-Geographic/main.html" target="blank">View Site</a>
+                        <div class="swiper-slide project_item project_item1"
+                            style="background-image:url(imgs/section2/mockup1.jpg)">
+                            <div class="project_text">
+                                <h3>내셔널지오그래픽(모작)</h3>
+                                <h4>반응형 웹</h4>
+                                <p>제작기간 : 5일</p>
+                                <p>Main Page</p>
+                                <a href="file:///C:/Users/hoho7/Desktop/%EB%82%B4%EC%85%94%EB%84%90%EC%A7%80%EC%98%A4%EA%B7%B8%EB%9E%98%ED%94%BD/National-Geographic/main.html"
+                                    target="blank">View Site</a>
+                            </div>
+                            <div class="project_bg">
+                            </div>
                         </div>
-                        <div class="project_bg">
+                        <div class="swiper-slide project_item project_item1"
+                            style="background-image:url(imgs/section2/mockup2.jpg)">
+                            <div class="project_text">
+                                <h3>KDM바이오(모작)</h3>
+                                <h4>반응형 웹</h4>
+                                <p>제작기간 : 6일</p>
+                                <p>Main Page</p>
+                                <a href="file:///C:/Users/hoho7/Desktop/kmd%EB%B0%94%EC%9D%B4%EC%98%B9/KMD/main.html"
+                                    target="blank">View Site</a>
+                            </div>
+                            <div class="project_bg"></div>
                         </div>
-                    </div>
-                    <div class="swiper-slide project_item project_item1" style="background-image:url(imgs/section2/mockup2.jpg)">
-                        <div class="project_text">
-                            <h3>KDM바이오(모작)</h3>
-                            <h4>반응형 웹</h4>
-                            <p>제작기간 : 6일</p>
-                            <p>Main Page</p>
-                            <a href="file:///C:/Users/hoho7/Desktop/kmd%EB%B0%94%EC%9D%B4%EC%98%B9/KMD/main.html" target="blank">View Site</a>
+                        <div class="swiper-slide project_item project_item1"
+                            style="background-image:url(imgs/section2/mockup3.jpg)">
+                            <div class="project_text">
+                                <h3>쉐보레(모작)</h3>
+                                <h4>적응형 웹</h4>
+                                <p>제작기간 : 4일</p>
+                                <p>Main Page</p>
+                                <a href="file:///C:/Users/hoho7/Desktop/%EC%97%91%EC%85%80%EC%84%B8%EB%9D%BC%ED%93%A8%ED%8B%B1%EC%8A%A4/main.html"
+                                    target="blank">View Site</a>
+                            </div>
+                            <div class="project_bg"></div>
                         </div>
-                        <div class="project_bg"></div>
-                    </div>
-                    <div class="swiper-slide project_item project_item1" style="background-image:url(imgs/section2/mockup3.jpg)">
-                        <div class="project_text">
-                            <h3>쉐보레(모작)</h3>
-                            <h4>적응형 웹</h4>
-                            <p>제작기간 : 4일</p>
-                            <p>Main Page</p>
-                            <a href="file:///C:/Users/hoho7/Desktop/%EC%97%91%EC%85%80%EC%84%B8%EB%9D%BC%ED%93%A8%ED%8B%B1%EC%8A%A4/main.html" target="blank">View Site</a>
+                        <div class="swiper-slide project_item project_item1"
+                            style="background-image:url(imgs/section2/mockup4.jpg)">
+                            <div class="project_text">
+                                <h3>에리메스(모작)</h3>
+                                <h4>반응형 웹</h4>
+                                <p>제작기간 : 6일</p>
+                                <p>Main Page</p>
+                                <a href="file:///C:/Users/hoho7/Desktop/%EC%97%90%EB%A5%B4%EB%A9%94%EC%8A%A4/hermes/index.html"
+                                    target="blank">View Site</a>
+                            </div>
+                            <div class="project_bg"></div>
                         </div>
-                        <div class="project_bg"></div>
-                    </div>
-                    <div class="swiper-slide project_item project_item1" style="background-image:url(imgs/section2/mockup4.jpg)">
-                        <div class="project_text">
-                            <h3>에리메스(모작)</h3>
-                            <h4>반응형 웹</h4>
-                            <p>제작기간 : 6일</p>
-                            <p>Main Page</p>
-                            <a href="file:///C:/Users/hoho7/Desktop/%EC%97%90%EB%A5%B4%EB%A9%94%EC%8A%A4/hermes/index.html" target="blank">View Site</a>
+                        <div class="swiper-slide project_item project_item1"
+                            style="background-image:url(imgs/section2/mockup5.jpg)">
+                            <div class="project_text">
+                                <h3>배달의민족(모작)</h3>
+                                <h4>반응형 웹</h4>
+                                <p>제작기간 : 3일</p>
+                                <p>Main Page</p>
+                                <a href="file:///C:/Users/hoho7/Desktop/%EB%B0%B0%EB%8B%AC%EC%9D%98%EB%AF%BC%EC%A1%B1/main.html"
+                                    target="blank">View Site</a>
+                            </div>
+                            <div class="project_bg"></div>
                         </div>
-                        <div class="project_bg"></div>
-                    </div>
-                    <div class="swiper-slide project_item project_item1" style="background-image:url(imgs/section2/mockup5.jpg)">
-                        <div class="project_text">
-                            <h3>배달의민족(모작)</h3>
-                            <h4>반응형 웹</h4>
-                            <p>제작기간 : 3일</p>
-                            <p>Main Page</p>
-                            <a href="file:///C:/Users/hoho7/Desktop/%EB%B0%B0%EB%8B%AC%EC%9D%98%EB%AF%BC%EC%A1%B1/main.html" target="blank">View Site</a>
+                        <div class="swiper-slide project_item project_item1"
+                            style="background-image:url(imgs/section2/mockup6.jpg)">
+                            <div class="project_text">
+                                <h3>To Do List(모작)</h3>
+                                <h4>반응형 웹</h4>
+                                <p>제작기간 : 2일</p>
+                                <p>Main Page</p>
+                                <a href="file:///C:/Users/hoho7/Desktop/To%20Do%20List/Momentum-Project/index.html"
+                                    target="blank">View Site</a>
+                            </div>
+                            <div class="project_bg"></div>
                         </div>
-                        <div class="project_bg"></div>
-                    </div>
-                    <div class="swiper-slide project_item project_item1" style="background-image:url(imgs/section2/mockup6.jpg)">
-                        <div class="project_text">
-                            <h3>To Do List(모작)</h3>
-                            <h4>반응형 웹</h4>
-                            <p>제작기간 : 2일</p>
-                            <p>Main Page</p>
-                            <a href="file:///C:/Users/hoho7/Desktop/To%20Do%20List/Momentum-Project/index.html" target="blank">View Site</a>
+                        <div class="swiper-slide project_item project_item1"
+                            style="background-image:url(imgs/section2/mockup7.jpg)">
+                            <div class="project_text">
+                                <h3>portfolio(모작)</h3>
+                                <h4>반응형 웹</h4>
+                                <p>제작기간 : 2일</p>
+                                <p>Main Page</p>
+                                <a href="file:///C:/Users/hoho7/Desktop/Eille/PortFolio/index.html" target="blank">View
+                                    Site</a>
+                            </div>
+                            <div class="project_bg"></div>
                         </div>
-                        <div class="project_bg"></div>
-                    </div>
-                    <div class="swiper-slide project_item project_item1" style="background-image:url(imgs/section2/mockup7.jpg)">
-                        <div class="project_text">
-                            <h3>portfolio(모작)</h3>
-                            <h4>반응형 웹</h4>
-                            <p>제작기간 : 2일</p>
-                            <p>Main Page</p>
-                            <a href="file:///C:/Users/hoho7/Desktop/Eille/PortFolio/index.html" target="blank">View Site</a>
+                        <div class="swiper-slide project_item project_item1"
+                            style="background-image:url(imgs/section2/mockup8.jpg)">
+                            <div class="project_text">
+                                <h3>PortFolio</h3>
+                                <h4>반응형 웹</h4>
+                                <p>제작기간 : 8일</p>
+                                <p>Main Page</p>
+                                <a href="#" target="blank">View Site</a>
+                            </div>
+                            <div class="project_bg"></div>
                         </div>
-                        <div class="project_bg"></div>
-                    </div>
-                    <div class="swiper-slide project_item project_item1" style="background-image:url(imgs/section2/mockup8.jpg)">
-                        <div class="project_text">
-                            <h3>PortFolio</h3>
-                            <h4>반응형 웹</h4>
-                            <p>제작기간 : 8일</p>
-                            <p>Main Page</p>
-                            <a href="#" target="blank">View Site</a>
-                        </div>
-                        <div class="project_bg"></div>
-                    </div>
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
-                  </div>
+                </div>
             </div>
-            
+
         </div>
         <div class="section " id="section3">
             <div class="section_box con">
@@ -305,37 +330,37 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide1">
                             <div class="slide_box">
-                              <div class="bg"></div>
-                              <h1>YES24</h1>
-                              <img src="imgs/works/1.jpg" alt="">
+                                <div class="bg"></div>
+                                <h1>YES24</h1>
+                                <img src="imgs/works/1.jpg" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide slide2">
                             <div class="slide_box">
-                              <div class="bg"></div>
-                              <h1>플로리다 포스터</h1>
-                              <img src="imgs/works/2.2.jpg" alt="">
+                                <div class="bg"></div>
+                                <h1>플로리다 포스터</h1>
+                                <img src="imgs/works/2.2.jpg" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide slide3">
                             <div class="slide_box">
-                              <div class="bg"></div>
-                              <h1>FREEDOM 포스터</h1>
-                              <img src="imgs/works/3.3.jpg" alt="">
+                                <div class="bg"></div>
+                                <h1>FREEDOM 포스터</h1>
+                                <img src="imgs/works/3.3.jpg" alt="">
                             </div>
                         </div>
-                        
-                        
+
+
                     </div>
 
-                    
+
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
                     <!-- Add Arrows -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                  </div>
-                  
+                </div>
+
             </div>
         </div>
         <div class="section " id="section4">
@@ -348,35 +373,40 @@
                         <span class="last">Introduce</span>
                     </div>
                     <p class="first">and ability </p>
-                  
-                 </div>
-                 
-                 <ul class="oneself_list">
-                     <li class="oneself_item">
-                         <p class="onself_item_title">
-                         <span>P</span>ublilshing</p>
-                         <p>- 퍼블리싱 스킬(Html5 , CSS3, JS)에 대한 이해도가 높고, 웹 표준성을 준수하여 코드를 작성합니다. 팀원 또는 코드 형상관리를 위해 Github 사용하며 플러그인 사용에 능합니다.</p>
-                     </li>
-                     <li class="oneself_item">
+
+                </div>
+
+                <ul class="oneself_list">
+                    <li class="oneself_item">
                         <p class="onself_item_title">
-                        <span>D</span>esign</p>
-                            <p>- Adobe의 대표적인 디자인툴 Photoshop, illustrator 를 사용할 수 있습니다. 포트폴리오는 전부 제가 직접 디자인 했습니다.</p>
+                            <span>P</span>ublilshing
+                        </p>
+                        <p>- 퍼블리싱 스킬(Html5 , CSS3, JS)에 대한 이해도가 높고, 웹 표준성을 준수하여 코드를 작성합니다. 팀원 또는 코드 형상관리를 위해 Github 사용하며
+                            플러그인 사용에 능합니다.</p>
                     </li>
                     <li class="oneself_item">
                         <p class="onself_item_title">
-                        <span>B</span>ack-end</p>
+                            <span>D</span>esign
+                        </p>
+                        <p>- Adobe의 대표적인 디자인툴 Photoshop, illustrator 를 사용할 수 있습니다. 포트폴리오는 전부 제가 직접 디자인 했습니다.</p>
+                    </li>
+                    <li class="oneself_item">
+                        <p class="onself_item_title">
+                            <span>B</span>ack-end
+                        </p>
                         <p>- 백엔드 언어(java,asp,jsp) 를 사용한 경험이 있습니다. 팀의 협업을 위해 각 포지션의 입장에서 생각합니다</p>
                     </li>
                     <li class="oneself_item">
                         <p class="onself_item_title">
-                        <span>A</span>ability</p>
+                            <span>A</span>ability
+                        </p>
                         <p>- 각각의 위 능력들을 조화롭게 사용하여 보다 깔끔하고 감각적인 디자인과 UI/IX를 잘 구성할 수 있으며 팀원들과의 협업도 매끄럽게 해나갈 수 있습니다.</p>
-                        
+
                     </li>
-                 </ul>
-             </div>
+                </ul>
+            </div>
         </div>
-       
+
     </div>
     <div class="works_modul">
         <div class="modul modul1">
@@ -399,47 +429,238 @@
         </div>
     </div>
 
-    
+
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
             sectionsColor: ['#000000', '#4BBFC3', 'black', '#111', 'black'],
             menu: '#menu',
             lazyLoad: true,
+            afterLoad: function (origin, target) {
+                if (target.index == 0) {
+                    let ani = gsap.from('.main_title ', {
+                        x: -700,
+                        duration: 1
+                    });
+                    let ani2 = gsap.from('.sub_title  ', {
+                        x: 700,
+                        duration: 1.5
+                    });
+                    let ani3 = gsap.from('.intro_title  ', {
+                        x: -500,
+                        duration: 0.5
+                    });
+                    
+                     
+
+                    $('.main_title').data('ani', ani);
+                }
+                else if(target.index == 1) {
+                    let ani4 = gsap.from('.content_title1  ', {
+                        x: -500,
+                        duration: 0.5
+                    });
+                    let ani5 = gsap.from('.content_term   ', {
+                        x: -500,
+                        duration: 0.5
+                    });
+                    let ani6 = gsap.from('.content_plan1   ', {
+                        x: -500,
+                        duration: 0.5
+                    });
+                    let ani7 = gsap.from('.view_content  ', {
+                        x: -500,
+                        duration: 0.5
+                    });
+                }
+                else if(target.index == 2) {
+                    let ani8 = gsap.from('.project_title  ', {
+                        x: -800,
+                        duration: 1
+                    });
+                    let ani9 = gsap.from('.swiper-container  ', {
+                        x: -800,
+                        duration: 1
+                    });
+                    
+                }
+                else if(target.index == 3) {
+                    let ani10 = gsap.from('.works_title  ', {
+                        x: -800,
+                        duration: 1
+                    });   
+                }
+                else if(target.index == 4) {
+                    let ani11 = gsap.from('.oneself_title  ', {
+                        x: -800,
+                        duration: 1
+                    });   
+                    let ani12 = gsap.from('.oneself_list  ', {
+                        x: -800,
+                        duration: 1
+                    });   
+                }
+                else {
+                    let ani = $('.main_title').data('ani');
+                    if (ani) {
+                        ani.kill();
+                    }
+                    gsap.to('.main_title', {
+                        x: 0,
+                        duration: 0
+                    });
+                }
+            }
         });
     </script>
 
-      <script>
+    <script>
         var swiper = new Swiper('.swiper1', {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          loop: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
 
         var swiper = new Swiper('.swiper2', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    })
-      </script>
-    <script src="main.js"></script>    
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        })
+    </script>
+    <script src="main.js"></script>
 </body>
+
 </html>
+
+
+<!-- html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css">
+
+<div id="fullpage"> 
+  <section class="section con-min-width bg-red">
+    <div class="con">
+      <div class="box-1"></div>
+    </div>
+  </section>
+  <section class="section con-min-width bg-blue"></section>
+  <section class="section con-min-width bg-gold"></section>
+  <section class="section con-min-width bg-pink"></section>
+  <section class="section con-min-width bg-green"></section>
+</div>
+
+-->
+
+<!-- css
+    body, ul, li {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.con {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.bg-red {
+  background-color:red;
+}
+
+.bg-green {
+  background-color:green;
+}
+
+.bg-blue {
+  background-color:blue;
+}
+
+.bg-gold {
+  background-color:gold;
+}
+
+.bg-pink {
+  background-color:pink;
+}
+
+
+.con-min-width {
+  min-width:320px;
+}
+
+.con {
+  max-width:1000px;
+}
+
+.box-1 {
+  width:100px;
+  height:100px;
+  background-color:green;
+}
+
+html[data-fullpage-index="0"] .box-1 {
+  border:10px solid blue;
+}
+ -->
+
+<!-- js
+function Fullpage__init() {
+  var myFullpage = new fullpage('#fullpage', {
+    afterLoad:function(origin, target) {
+      $('html').attr('data-fullpage-index', target.index);
+      
+      if ( target.index == 0 ) {
+        let ani = gsap.to('.box-1', {
+          x: 400,
+          rotation: 360,
+          duration: 4
+        });
+        
+        $('.box-1').data('ani', ani);
+      }
+      else {
+        let ani = $('.box-1').data('ani');
+        
+        if ( ani ) {
+          ani.kill();
+        }
+        
+        gsap.to('.box-1', {
+          x: 0,
+          rotation: 0,
+          duration: 0
+        });
+      }
+    }
+  });
+}
+
+Fullpage__init();
+
+ -->
