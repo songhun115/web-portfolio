@@ -42,7 +42,7 @@
     
         }
         .swiper2 .swiper-slide:hover .project_bg {
-            opacity: 0.3;
+            opacity: 0.7;
             transition: 0.3s;
         }
         .project_bg{
@@ -73,16 +73,21 @@
 </head>
 <body>
     <!-- menu btn  -->
-    <div class="menu_btn">
-        <i class="fas fa-bars"></i>
-        <ul class="menu_list">
-            <li class="menu_item" data-link="#section0">INTRO</li>
-            <li class="menu_item" data-link="#section1">REDESIGN</li>
-            <li class="menu_item" data-link="#section2">PROJECTS</li>
-            <li class="menu_item" data-link="#section3">OTHER WORKS</li>
-            <li class="menu_item" data-link="#section4">ONESELF</li>
-        </ul>
-    </div>
+        <div class="menu_btn">
+            <div class="btn_line_box">
+            <div class="btn_line line1"></div>
+            <div class="btn_line line2"></div>
+            <div class="btn_line line3"></div>
+        </div>  
+            <ul class="menu_list">
+                <li class="menu_item" data-link="#section0">INTRO</li>
+                <li class="menu_item" data-link="#section1">REDESIGN</li>
+                <li class="menu_item" data-link="#section2">PROJECTS</li>
+                <li class="menu_item" data-link="#section3">OTHER WORKS</li>
+                <li class="menu_item" data-link="#section4">ONESELF</li>
+            </ul>
+        </div>
+    
    
     <!--navigation_bar Start-->
     <nav class="nav_bar">
@@ -140,7 +145,7 @@
                             <span>제작기간</span>
                             <p>7일 - 기획3일 / 디자인 2일 / 퍼블리싱 2일</p>
                         </div>
-                        <div class="content_plan slide_content">
+                        <div class="content_plan content_plan1 slide_content">
                             <span>기획의도</span>
                             <p>브랜드관련 차량정보, 관련 이벤트, 매장정보, 고객연결 센터 등 
                                 자세한 정보들을 사이트 방문자에게 제공하기 위해 시인성을 기존
@@ -197,7 +202,7 @@
                 <div class="project_box">
                     <div class="project_title">
                         <h1>PROJECT</h1>
-                        <p>Click to open detail</p>
+                        <p>Click to view site open detail</p>
                     </div> 
                 </div>
                 <div class="swiper-container swiper2">
@@ -319,13 +324,7 @@
                               <img src="imgs/works/3.3.jpg" alt="">
                             </div>
                         </div>
-                        <div class="swiper-slide slide4">
-                            <div class="slide_box">
-                              <div class="bg"></div>
-                              <h1>Stabucs</h1>
-                              <img src="imgs/section0/main_img.png" alt="">
-                            </div>
-                        </div>
+                        
                         
                     </div>
 
@@ -356,7 +355,7 @@
                      <li class="oneself_item">
                          <p class="onself_item_title">
                          <span>P</span>ublilshing</p>
-                         <p>- 퍼블리싱 스킬(Html5 , CSS3, JS)에 대한 이해도가 높고, 웹 표준성을 준수하여 코드를 작성합니다. JQuery 사용해 애니메이션을 연구하고 구현하는 것을 좋아하며 플러그인 사용에 능합니다.</p>
+                         <p>- 퍼블리싱 스킬(Html5 , CSS3, JS)에 대한 이해도가 높고, 웹 표준성을 준수하여 코드를 작성합니다. 팀원 또는 코드 형상관리를 위해 Github 사용하며 플러그인 사용에 능합니다.</p>
                      </li>
                      <li class="oneself_item">
                         <p class="onself_item_title">
@@ -366,7 +365,7 @@
                     <li class="oneself_item">
                         <p class="onself_item_title">
                         <span>B</span>ack-end</p>
-                        <p>- 백엔드 언어(php,asp,jsp) 를 사용한 경험이 있습니다. 팀의 협업을 위해 각 포지션의 입장에서 생각합니다</p>
+                        <p>- 백엔드 언어(java,asp,jsp) 를 사용한 경험이 있습니다. 팀의 협업을 위해 각 포지션의 입장에서 생각합니다</p>
                     </li>
                     <li class="oneself_item">
                         <p class="onself_item_title">
@@ -403,7 +402,7 @@
     
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            sectionsColor: ['#000000', '#4BBFC3', 'black', 'black', 'black'],
+            sectionsColor: ['#000000', '#4BBFC3', 'black', '#111', 'black'],
             menu: '#menu',
             lazyLoad: true,
         });
