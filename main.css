@@ -638,3 +638,21 @@
 .oneself_list.vi {
   visibility: visible;
 }
+.main_title {
+  visibility: hidden;
+}
+.main_title.vi {
+  visibility: visible;
+}
+.intro_title {
+  visibility: hidden;
+}
+.intro_title.vi {
+  visibility: visible;
+}
+.sub_title {
+  visibility: hidden;
+}
+.sub_title.vi {
+  visibility: visible;
+}

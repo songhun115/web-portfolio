@@ -442,6 +442,10 @@
             afterLoad: function (origin, target) {
 
                 if (target.index == 0) {
+                    $('.main_title').addClass('vi');
+                    $('.intro_title').addClass('vi');
+                    $('.sub_title').addClass('vi');
+                    
                     $('.content_box1').removeClass('vi');
                     $('.project_title').removeClass('vi');
                     $('.works_title').removeClass('vi');
@@ -468,6 +472,9 @@
                     $('.main_title').data('ani', ani);
                 }
                 else if(target.index == 1) {
+                    $('.sub_title').removeClass('vi');
+                    $('.main_title').removeClass('vi');
+                    $('.intro_title').removeClass('vi');
                     $('.works_title').removeClass('vi');
                   $('.content_box1').addClass('vi');
                   $('.project_title').removeClass('vi');
@@ -480,6 +487,9 @@
                     });
                 }
                 else if(target.index == 2) {
+                    $('.sub_title').removeClass('vi');
+                    $('.main_title').removeClass('vi');
+                    $('.intro_title').removeClass('vi');
                     $('.works_title').removeClass('vi');
                     $('.content_box1').removeClass('vi');
                     $('.project_title').addClass('vi');
@@ -497,6 +507,9 @@
                     
                 }
                 else if(target.index == 3) {
+                    $('.sub_title').removeClass('vi');
+                    $('.main_title').removeClass('vi');
+                    $('.intro_title').removeClass('vi');
                     $('.works_title').addClass('vi');
                     $('.content_box1').removeClass('vi');
                     $('.project_title').removeClass('vi');
@@ -508,6 +521,9 @@
                     });   
                 }
                 else if(target.index == 4) {
+                    $('.sub_title').removeClass('vi');
+                    $('.main_title').removeClass('vi');
+                    $('.intro_title').removeClass('vi');
                     $('.works_title').removeClass('vi');
                     $('.content_box1').removeClass('vi');
                     $('.project_title').removeClass('vi');
