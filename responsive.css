@@ -4,7 +4,7 @@
   }
   .oneself_list {
     padding: 0 50px 0 50px;
-    } 
+  }
 }
 @media (min-width: 1400px) {
   .modul {
@@ -12,7 +12,6 @@
   }
 }
 @media (max-width: 1024px) {
- 
   .modul1 > img {
     width: 50%;
   }

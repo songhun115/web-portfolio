@@ -563,8 +563,7 @@
   margin-bottom: 15px;
 }
 
-
-.btn_line_box  {
+.btn_line_box {
   position: relative;
   width: 100%;
   height: 100%;
@@ -604,8 +603,38 @@
   transform: rotate(-45deg);
   transition: 0.3s;
 }
- .btn_line_box:hover > .line2{ 
-   opacity: 0 ;
-   transition: 0.3s;
+.btn_line_box:hover > .line2 {
+  opacity: 0;
+  transition: 0.3s;
+}
+.content_box1 {
+  visibility: hidden;
+}
+.content_box1.vi {
+  visibility: visible;
+}
 
+.project_title {
+  visibility: hidden;
+}
+.project_title.vi {
+  visibility: visible;
+}
+.swiper-container {
+  visibility: hidden;
+}
+.swiper-container.vi {
+  visibility: visible;
+}
+.oneself_title {
+  visibility: hidden;
+}
+.oneself_title.vi {
+  visibility: visible;
+}
+.oneself_list {
+  visibility: hidden;
+}
+.oneself_list.vi {
+  visibility: visible;
 }

@@ -442,7 +442,12 @@
             afterLoad: function (origin, target) {
 
                 if (target.index == 0) {
-                    
+                    $('.content_box1').removeClass('vi');
+                    $('.project_title').removeClass('vi');
+                    $('.works_title').removeClass('vi');
+                    $('.swiper-container').removeClass('vi');
+                    $('.oneself_title').removeClass('vi');
+                    $('.oneself_list').removeClass('vi');
                     let ani = gsap.from('.main_title ', {
                         x: -700,
                         duration: 1
@@ -463,13 +468,24 @@
                     $('.main_title').data('ani', ani);
                 }
                 else if(target.index == 1) {
+                    $('.works_title').removeClass('vi');
+                  $('.content_box1').addClass('vi');
+                  $('.project_title').removeClass('vi');
+                  $('.swiper-container').removeClass('vi');
+                  $('.oneself_title').removeClass('vi');
+                    $('.oneself_list').removeClass('vi');
                     let ani13 = gsap.from('.content_box1', {
                         x: -1000,
                         duration: 1
                     });
-                   
                 }
                 else if(target.index == 2) {
+                    $('.works_title').removeClass('vi');
+                    $('.content_box1').removeClass('vi');
+                    $('.project_title').addClass('vi');
+                    $('.swiper-container').addClass('vi');
+                    $('.oneself_title').removeClass('vi');
+                    $('.oneself_list').removeClass('vi');
                     let ani8 = gsap.from('.project_title  ', {
                         x: -800,
                         duration: 1
@@ -481,13 +497,24 @@
                     
                 }
                 else if(target.index == 3) {
+                    $('.works_title').addClass('vi');
+                    $('.content_box1').removeClass('vi');
+                    $('.project_title').removeClass('vi');
+                    $('.oneself_title').removeClass('vi');
+                    $('.oneself_list').removeClass('vi');
                     let ani10 = gsap.from('.works_title  ', {
                         x: -800,
                         duration: 1
                     });   
                 }
                 else if(target.index == 4) {
-                   
+                    $('.works_title').removeClass('vi');
+                    $('.content_box1').removeClass('vi');
+                    $('.project_title').removeClass('vi');
+                    $('.swiper-container').removeClass('vi');
+                    $('.oneself_title').addClass('vi');
+                    $('.oneself_list').addClass('vi');
+                  
                     TweenMax.from(".oneself_title", 1, {
                         opacity: 0,
                         x: -100,
